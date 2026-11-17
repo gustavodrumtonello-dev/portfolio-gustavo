@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gustavo Drum Tonello — Heavy Metal Developer </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Syne:wght@700;800;900&family=Fira+Code:wght@400;600;700&family=Geist:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=block" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-dot" id="metal-cursor-dot">
+    </div>
+    <div class="cursor-reticle" id="metal-cursor-reticle">
+    </div>
+    <canvas id="metal-canvas" aria-hidden="true">
+    </canvas>
+    <div class="scanlines" aria-hidden="true">
+    </div>
+    <div class="ambient-light ambient-light-gold" aria-hidden="true">
+    </div>
+    <div class="ambient-light ambient-light-red" aria-hidden="true">
+    </div>
+    <header class="site-header">
+        <div class="status-bar">
+            <span> <b> GDT // HEAVY METAL ARCHITECTURE </b> <i> | 2º ANO DEV. SISTEMAS | SENAC PROGRAMADOR WEB COMPLETO
+                </i> </span>
+            <span> <b> 16 Y.O. </b> | <a href="https://github.com/gustavodrumtonello-dev" target="_blank"
+                    rel="noopener"> GITHUB.COM/GUSTAVODRUMTONELLO-DEV </a>
+            </span>
+        </div>
+        <nav class="navigation" aria-label="Navegação principal">
+            <a class="brand" href="#hero"> &gt; <strong> GUSTAVO DRUM </strong> _ </a>
+            <div class="nav-links">
+                <a href="#hero"> # INÍCIO </a> <a href="#trajetoria"> # TRAJETÓRIA </a> <a href="#experiencia"> #
+                    EXPERIÊNCIA
+                </a> <a href="#projetos"> # PROJETOS </a> <a href="#contato"> # CONTATO </a>
+            </div>
+            <a class="github-button" href="https://github.com/gustavodrumtonello-dev" target="_blank" rel="noopener">
+                REPOSITÓRIOS </a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero section" id="hero" data-reveal>
+            <div class="hero-art">
+                <div class="hero-ring">
+                    <div class="hero-glow">
+                    </div>
+                </div>
+                <img src="assets/statue_justice_crisp.svg" alt="Estátua metálica da Justiça">
+            </div>
+            <div class="hero-content container">
+                <div class="hero-copy">
+                    <div class="badge">
+                        16 ANOS // 2º ANO DEV. SISTEMAS // SENAC FORMADO
+                    </div>
+                    <p class="eyebrow"> [ OLÁ, EU SOU ] </p>
+                    <h1> Gustavo <br> <strong> Drum Tonello
+                        </strong> </h1>
+                    <h2> &gt;&gt; DESENVOLVEDOR WEB &amp; SISTEMAS </h2>
+                    <p class="intro"> Tenho 16 anos, sou estudante do <b>
+                            2º ano de Desenvolvimento de Sistemas </b> e formado no curso de <strong> Programador Web
+                            pelo Senac </strong> . Crio código de alta precisão, interfaces funcionais e experiências
+                        visuais marcantes. </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projetos"> VER PROJETOS </a> <a
+                            class="button button-secondary" href="#experiencia"> MINHAS SKILLS </a> <a
+                            class="button button-secondary" href="#contato"> ENTRAR EM CONTATO
+                        </a>
+                    </div>
+                    <div class="metrics">
+                        <div>
+                            <b> 16 </b> <span> ANOS DE IDADE </span>
+                        </div>
+                        <div>
+                            <b> 2º ANO </b> <span> DEV. SISTEMAS </span>
+                        </div>
+                        <div>
+                            <b> WEB </b> <span> SENAC </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section dark-section" id="trajetoria" data-reveal>
+            <div class="container">
+                <p class="section-label"> 01 // MANIFESTO &amp; FORMAÇÃO </p>
+                <div class="two-columns">
+                    <div>
+                        <h2> SEM ATALHOS. APENAS CÓDIGO PURO, LÓGICA E DISCIPLINA. </h2>
+                        <p> Minha formação combina arquitetura, dados, lógica computacional e engenharia de software.
+                        </p>
+                        <p> No Senac, finalizei o curso de
+                            <b> Programador Web </b> , estudando interfaces responsivas, APIs e JavaScript.
+                        </p>
+                        <div class="certificate">
+                            <b> ✓ CERTIFICAÇÃO OFICIAL SENAC </b>
+                            <p> Formação completa em HTML, CSS, JavaScript, backend e publicação de aplicações web. </p>
+                        </div>
+                    </div>
+                    <div class="skill-grid">
+                        <article class="skill-card">
+                            <span> ⌘ </span>
+                            <h3> DESENVOLVIMENTO FRONTEND </h3>
+                            <p> HTML5 semântico, Tailwind, Vanilla JS e interfaces responsivas.
+                            </p>
+                        </article>
+                        <article class="skill-card">
+                            <span> ◇ </span>
+                            <h3> LÓGICA DE SISTEMAS &amp; BD </h3>
+                            <p> SQL, modelagem relacional, POO e regras de negócio.
+                            </p>
+                        </article>
+                        <article class="skill-card">
+                            <span> ⚔ </span>
+                            <h3> INTERATIVIDADE &amp; FX </h3>
+                            <p> DOM, Canvas, partículas, cursor e microinterações.
+                            </p>
+                        </article>
+                        <article class="skill-card">
+                            <span> ⌘ </span>
+                            <h3> CONTROLE DE VERSÃO </h3>
+                            <p> Git, GitHub, branches organizadas e documentação.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="experiencia" data-reveal>
+            <div class="container narrow">
+                <p class="section-label"> 02 // COMPETÊNCIAS &amp; ARQUIVOS </p>
+                <h2> MINHA EXPERIÊNCIA </h2>
+                <p class="section-description"> Clique nas categorias técnicas para inspecionar minhas ferramentas.
+                </p>
+                <div class="accordion-list">
+                    <article class="accordion-item active">
+                        <button class="accordion-header" type="button"> <span> <b> ▣ FRONTEND DEVELOPER </b> <small>
+                                    Interfaces e aplicações web </small>
+                            </span> <span class="accordion-icon"> ⌄ </span> </button>
+                        <div class="accordion-content">
+                            <p> Performance, acessibilidade, compatibilidade e design responsivo. </p>
+                            <div class="tags">
+                                <i> HTML5 </i> <i> CSS3 </i> <i> Tailwind
+                                </i> <i> JavaScript </i> <i> DOM </i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="accordion-item">
+                        <button class="accordion-header" type="button"> <span> <b> ▣ BACKEND DEVELOPER </b> <small>
+                                    APIs, lógica e persistência </small>
+                            </span> <span class="accordion-icon"> ⌄ </span> </button>
+                        <div class="accordion-content">
+                            <p> Rotas, requisições, SQL e operações CRUD. </p>
+                            <div class="tags">
+                                <i> Node.js </i> <i> REST </i> <i> SQL
+                                </i> <i> JSON </i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="accordion-item">
+                        <button class="accordion-header" type="button"> <span> <b> ▣ UI / UX &amp; INTERATIVIDADE </b>
+                                <small> Design agressivo e microinterações </small>
+                            </span> <span class="accordion-icon"> ⌄ </span> </button>
+                        <div class="accordion-content">
+                            <p> Alto contraste, tipografia, animações e design systems. </p>
+                            <div class="tags">
+                                <i> Cursor FX </i> <i> Micro-Animações </i> <i> Dark Mode
+                                </i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section dark-section" id="projetos" data-reveal>
+            <div class="container">
+                <p class="section-label"> 03 // REPOSITÓRIOS &amp; DESENVOLVIMENTO </p>
+                <h2> MEUS PROJETOS </h2>
+                <p class="section-description"> Aplicações práticas com código aberto no meu GitHub.
+                </p>
+                <div class="project-grid">
+                    <article class="project-card" data-reveal>
+                        <span> ⌘ </span>
+                        <h3> APLICAÇÕES WEB DINÂMICAS </h3>
+                        <p> JavaScript assíncrono, DOM e Tailwind CSS.
+                        </p> <a href="https://github.com/gustavodrumtonello-dev" target="_blank" rel="noopener"> SAIBA
+                            MAIS → </a>
+                    </article>
+                    <article class="project-card" data-reveal>
+                        <span> ▣ </span>
+                        <h3> PROJETOS SENAC WEB </h3>
+                        <p> Páginas responsivas, formulários e layouts.
+                        </p> <a href="https://github.com/gustavodrumtonello-dev" target="_blank" rel="noopener"> SAIBA
+                            MAIS → </a>
+                    </article>
+                    <article class="project-card" data-reveal>
+                        <span> ◇ </span>
+                        <h3> SISTEMAS &amp; ENGENHARIA </h3>
+                        <p> Algoritmos, POO, CRUD e protótipos comerciais.
+                        </p> <a href="https://github.com/gustavodrumtonello-dev" target="_blank" rel="noopener"> SAIBA
+                            MAIS → </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="contato" data-reveal>
+            <div class="container narrow">
+                <p class="section-label"> 04 // CONTATO DIRETO </p>
+                <h2> VAMOS CONVERSAR? </h2>
+                <p class="section-description"> Pronto para novos desafios, estágios, projetos e parcerias.
+                </p>
+                <form class="contact-form" id="contact-form">
+                    <label> SEU NOME <input name="name" type="text" required placeholder="Digite seu nome ou empresa">
+                    </label> <label> SEU E-MAIL <input name="email" type="email" required
+                            placeholder="seuemail@exemplo.com"> </label>
+                    <label> MENSAGEM <textarea name="message" rows="5" required
+                            placeholder="Escreva sua mensagem..."> </textarea> </label> <button
+                        class="button button-primary" type="submit"> ENVIAR MENSAGEM </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <b> GDT </b> <span> Desenvolvido por Gustavo Drum Tonello </span> <span> 16 Y.O. • 2º ANO DS • SENAC WEB
+        </span>
+    </footer>
+    <a class="floating-github" href="https://github.com/gustavodrumtonello-dev" target="_blank" rel="noopener"
+        title="Acessar GitHub"> ↗ </a>
+    <script src="script.js" defer> </script>
+</body>
+
+</html>
