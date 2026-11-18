@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .section {
-    padding: 96px 6%;
+    padding: 96px 4%;
     border-bottom: 1px solid #1e1e28;
 }
 
@@ -12,12 +12,12 @@
 }
 
 .container {
-    max-width: 1180px;
+    max-width: 1720px;
     margin: auto;
 }
 
 .narrow {
-    max-width: 850px;
+    max-width: 1720px;
 }
 
 .section-label {
@@ -49,7 +49,7 @@
 .two-columns {
     display: grid;
     grid-template-columns: 1fr 1.4fr;
-    gap: 60px;
+    gap: 90px;
 }
 
 .two-columns > div > p {

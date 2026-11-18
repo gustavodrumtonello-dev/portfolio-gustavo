@@ -11,6 +11,17 @@
     background: var(--panel);
 }
 
+@media (min-width: 801px) {
+    .contact-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-form label:nth-of-type(3),
+    .contact-form .button {
+        grid-column: 1 / -1;
+    }
+}
+
 .contact-form label {
     color: #c4c4d4;
     font: 700 11px 'Fira Code', monospace;
@@ -39,7 +50,7 @@
     display: flex;
     justify-content: space-between;
     gap: 18px;
-    padding: 38px 6%;
+    padding: 38px 4%;
     background: #040406;
     color: #7a7a8c;
     font: 12px 'Fira Code', monospace;
