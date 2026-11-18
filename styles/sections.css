@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Sections Layout & Manifesto
+   ========================================================================== */
+
+.section {
+    padding: 96px 6%;
+    border-bottom: 1px solid #1e1e28;
+}
+
+.dark-section {
+    background: #07070a;
+}
+
+.container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+.narrow {
+    max-width: 850px;
+}
+
+.section-label {
+    margin-bottom: 16px;
+    color: var(--gold);
+    font: 700 12px 'Fira Code', monospace;
+    letter-spacing: 0.15em;
+}
+
+.section h2 {
+    margin-bottom: 18px;
+    color: #fff;
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(28px, 5vw, 52px);
+    line-height: 1.05;
+    text-transform: uppercase;
+}
+
+.section-description {
+    margin-bottom: 38px;
+    color: #aeaebe;
+}
+
+.section p {
+    color: #aeaebe;
+}
+
+/* Two Columns & Manifesto */
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 60px;
+}
+
+.two-columns > div > p {
+    margin-bottom: 18px;
+}
+
+.certificate {
+    margin-top: 26px;
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--gold);
+    background: var(--panel);
+}
+
+.certificate > b {
+    color: #fff;
+    font: 700 13px 'Fira Code', monospace;
+}
+
+.certificate p {
+    margin-top: 8px;
+    font-size: 12px;
+}

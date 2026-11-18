@@ -1,0 +1,123 @@
+/* Scroll Reveal & Keyframes */
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    [data-reveal] {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* Tablet Breakpoint (max-width: 800px) */
+@media (max-width: 800px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero-art {
+        right: -25%;
+        width: 75%;
+        opacity: 0.5;
+    }
+
+    .two-columns,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .two-columns {
+        gap: 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .status-bar {
+        font-size: 9px;
+    }
+
+    .status-bar i,
+    .status-bar span:last-child a {
+        display: none;
+    }
+}
+
+/* Mobile Breakpoint (max-width: 520px) */
+@media (max-width: 520px) {
+    .section {
+        padding: 70px 20px;
+    }
+
+    .navigation {
+        padding: 0 20px;
+    }
+
+    .github-button {
+        font-size: 10px;
+    }
+
+    .hero {
+        min-height: 850px;
+    }
+
+    .hero-art {
+        top: 18%;
+        height: 45%;
+        opacity: 0.35;
+    }
+
+    .hero-copy {
+        margin-top: 180px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-actions,
+    .hero-actions .button {
+        width: 100%;
+    }
+
+    .metrics {
+        gap: 7px;
+    }
+
+    .metrics div {
+        padding: 10px 7px;
+    }
+
+    .metrics b {
+        font-size: 19px;
+    }
+
+    .metrics span {
+        font-size: 9px;
+    }
+
+    .footer {
+        padding: 30px 20px;
+    }
+}

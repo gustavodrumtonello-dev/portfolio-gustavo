@@ -1,0 +1,76 @@
+.site-header,
+main,
+.footer {
+    position: relative;
+    z-index: 20;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 6px 24px;
+    background: #08080c;
+    border-bottom: 1px solid #1e1e28;
+    color: #8e8e9f;
+    font: 11px 'Fira Code', monospace;
+}
+
+.status-bar b,
+.status-bar a {
+    color: var(--gold);
+}
+
+.status-bar i {
+    font-style: normal;
+}
+
+.navigation {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    border-bottom: 1px solid #1e1e28;
+    background: rgba(5, 5, 7, 0.91);
+    backdrop-filter: blur(12px);
+}
+
+.brand {
+    color: var(--gold);
+    font: 700 18px 'Fira Code', monospace;
+}
+
+.brand strong {
+    color: #fff;
+    font: 900 18px 'Cinzel', serif;
+    letter-spacing: 0.08em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    font: 12px 'Fira Code', monospace;
+}
+
+.nav-links a {
+    color: #c4c4d4;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.github-button {
+    padding: 9px 14px;
+    border: 1px solid #2b2b38;
+    color: var(--gold);
+    font: 12px 'Fira Code', monospace;
+    transition: 0.2s;
+}
+
+.github-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(255, 208, 38, 0.4);
+}

@@ -1,0 +1,149 @@
+/* ==========================================================================
+   Components: Skills, Accordions & Projects
+   ========================================================================== */
+
+/* Skills Grid */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.skill-card {
+    padding: 24px;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-3px);
+}
+
+.skill-card span {
+    color: var(--gold);
+    font-size: 28px;
+}
+
+.skill-card h3 {
+    margin: 12px 0 8px;
+    color: #fff;
+    font: 700 14px 'Fira Code', monospace;
+}
+
+.skill-card p {
+    font-size: 12px;
+}
+
+/* Accordion (Experience) */
+.accordion-list {
+    display: grid;
+    gap: 14px;
+}
+
+.accordion-item {
+    border: 1px solid #222230;
+    background: #0a0a0e;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 24px;
+    text-align: left;
+    background: transparent;
+}
+
+.accordion-header b {
+    display: block;
+    color: #fff;
+    font: 700 14px 'Fira Code', monospace;
+}
+
+.accordion-header small {
+    display: block;
+    margin-top: 5px;
+    color: #8e8e9f;
+}
+
+.accordion-icon {
+    color: var(--gold);
+    font-size: 20px;
+    transition: transform 0.35s;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 24px;
+    transition: 0.35s;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 260px;
+    padding-bottom: 22px;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.tags i {
+    padding: 5px 9px;
+    border: 1px solid #2b2b38;
+    color: var(--gold);
+    background: #14141e;
+    font: 12px 'Fira Code', monospace;
+    font-style: normal;
+}
+
+/* Project Cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.project-card {
+    padding: 24px;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-3px);
+}
+
+.project-card > span {
+    color: var(--gold);
+    font-size: 28px;
+}
+
+.project-card h3 {
+    margin: 12px 0 8px;
+    color: #fff;
+    font: 700 14px 'Fira Code', monospace;
+}
+
+.project-card p {
+    font-size: 12px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--gold);
+    font: 700 11px 'Fira Code', monospace;
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Syne:wght@700;800;900&family=Fira+Code:wght@400;600;700&family=Geist:wght@400;500;600;700&display=swap');
+
+:root {
+    --gold: #ffd026;
+    --black: #050507;
+    --panel: #09090e;
+    --line: #282832;
+    --muted: #9e9eaf;
+    --red: #e50914;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--black);
+    color: #ededef;
+    font-family: 'Geist', Arial, sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+    cursor: none;
+}
+
+a,
+button,
+input,
+textarea {
+    color: inherit;
+    cursor: none;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    background: none;
+}
+
+/* Custom Cursor */
+.cursor-dot,
+.cursor-reticle {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.cursor-dot {
+    width: 10px;
+    height: 10px;
+    background: var(--gold);
+    box-shadow: 0 0 15px var(--gold), 0 0 30px rgba(255, 208, 38, 0.6);
+}
+
+.cursor-reticle {
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255, 208, 38, 0.7);
+    z-index: 9998;
+    clip-path: polygon(0 25%, 25% 0, 75% 0, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0 75%);
+    transition: 0.2s;
+}
+
+.cursor-active .cursor-dot {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    box-shadow: 0 0 25px var(--gold);
+}
+
+.cursor-active .cursor-reticle {
+    width: 68px;
+    height: 68px;
+    border-color: var(--gold);
+    background: rgba(255, 208, 38, 0.08);
+}
+
+/* Background Effects */
+#metal-canvas {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.scanlines {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0.4;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.35) 50%),
+                linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 4px, 6px 100%;
+}
+
+.ambient-light {
+    position: fixed;
+    z-index: -1;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(170px);
+}
+
+.ambient-light-gold {
+    width: 700px;
+    height: 700px;
+    right: 25%;
+    top: 0;
+    background: rgba(255, 208, 38, 0.08);
+}
+
+.ambient-light-red {
+    width: 550px;
+    height: 550px;
+    left: 0;
+    bottom: 33%;
+    background: rgba(229, 9, 20, 0.05);
+}

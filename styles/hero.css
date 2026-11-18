@@ -1,0 +1,184 @@
+.hero {
+    min-height: 94vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 100%;
+}
+
+.hero-copy {
+    max-width: 650px;
+    position: relative;
+    z-index: 2;
+}
+
+.badge,
+.eyebrow {
+    color: var(--gold);
+    font: 700 12px 'Fira Code', monospace;
+    letter-spacing: 0.15em;
+}
+
+.badge {
+    display: inline-block;
+    padding: 7px 14px;
+    margin-bottom: 28px;
+    border-left: 4px solid var(--gold);
+    background: #0d0d13;
+}
+
+.eyebrow {
+    margin-bottom: 8px;
+}
+
+.hero h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(42px, 7vw, 78px);
+    line-height: 0.95;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.hero h1 strong {
+    color: transparent;
+    background: linear-gradient(90deg, var(--gold), #fff176, var(--gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.hero h2 {
+    font-family: 'Syne', sans-serif;
+    margin-bottom: 28px;
+    color: #a5a5ba;
+    font: 700 clamp(18px, 3vw, 25px) 'Fira Code', monospace;
+    text-transform: uppercase;
+}
+
+.intro {
+    max-width: 650px;
+    margin-bottom: 30px;
+    color: #aeaebe;
+    font-size: 17px;
+}
+
+.intro strong,
+.intro b {
+    color: var(--gold);
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 24px;
+    font: 700 12px 'Fira Code', monospace;
+    letter-spacing: 0.04em;
+    transition: 0.2s;
+}
+
+.button-primary {
+    background: var(--gold);
+    color: var(--black);
+}
+
+.button-secondary {
+    border: 1px solid #2b2b38;
+    background: #0d0d14;
+    color: #fff;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(255, 208, 38, 0.4);
+}
+
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 520px;
+    margin-top: 45px;
+    padding-top: 28px;
+    border-top: 1px solid #1e1e28;
+}
+
+.metrics div {
+    padding: 15px;
+    border: 1px solid var(--line);
+    background: var(--panel);
+}
+
+.metrics b {
+    display: block;
+    color: var(--gold);
+    font: 900 26px 'Syne', sans-serif;
+}
+
+.metrics span {
+    color: #8e8e9f;
+    font: 11px 'Fira Code', monospace;
+}
+
+/* Hero Art - 3D King V Guitar */
+.hero-art {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    width: 54%;
+    height: 96%;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+    perspective: 1000px;
+}
+
+.hero-ring {
+    position: absolute;
+    width: min(560px, 94%);
+    aspect-ratio: 1;
+    border: 2px solid rgba(255, 208, 38, 0.45);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(22, 22, 34, 0.85) 0%, rgba(5, 5, 7, 0.95) 70%);
+    box-shadow: 0 0 90px rgba(255, 208, 38, 0.35), inset 0 0 60px rgba(255, 208, 38, 0.18);
+}
+
+.hero-ring::before {
+    content: '';
+    position: absolute;
+    inset: 14px;
+    border: 1px dashed rgba(255, 208, 38, 0.35);
+    border-radius: 50%;
+    animation: spin 30s linear infinite;
+}
+
+.hero-glow {
+    position: absolute;
+    inset: 15%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 208, 38, 0.35) 0%, rgba(229, 9, 20, 0.12) 60%, transparent 80%);
+    filter: blur(80px);
+}
+
+.hero-guitar {
+    position: relative;
+    z-index: 2;
+    width: 108%;
+    max-width: 720px;
+    height: auto;
+    object-fit: contain;
+    transform: rotate(-25deg);
+    transform-origin: center center;
+    filter: contrast(1.2) brightness(1.08) drop-shadow(0 0 35px rgba(255, 208, 38, 0.5)) drop-shadow(0 25px 50px rgba(0, 0, 0, 0.95));
+    transition: transform 0.18s cubic-bezier(0.2, 0, 0.2, 1);
+    will-change: transform;
+}
