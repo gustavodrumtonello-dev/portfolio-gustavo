@@ -6,7 +6,7 @@
 .skill-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+    gap: 24px;
 }
 
 .skill-card {
@@ -111,7 +111,7 @@
 .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    gap: 28px;
 }
 
 .project-card {
