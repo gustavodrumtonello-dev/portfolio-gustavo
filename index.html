@@ -38,7 +38,7 @@
         <nav class="navigation" aria-label="Navegação principal">
             <a class="brand" href="#hero"> &gt; <strong> GUSTAVO DRUM </strong> _ </a>
             <div class="nav-links">
-                <a href="#hero"> # INÍCIO </a> <a href="#trajetoria"> # TRAJETÓRIA </a> <a href="#experiencia"> #
+                <a href="#hero"> # INÍCIO </a> <a href="#palco"> # PALCO </a> <a href="#trajetoria"> # TRAJETÓRIA </a> <a href="#experiencia"> #
                     EXPERIÊNCIA
                 </a> <a href="#projetos"> # PROJETOS </a> <a href="#contato"> # CONTATO </a>
             </div>
@@ -108,6 +108,84 @@
                             <b> 2º ANO </b> <span> DEV. SISTEMAS </span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="palco" data-reveal>
+            <div class="container">
+                <p class="section-label"> PALCO // KING V INTERATIVA </p>
+                <div class="stage-head">
+                    <div>
+                        <h2> TOQUE A KING V </h2>
+                        <p class="section-description"> Arraste o mouse (ou o dedo) pelas cordas para dedilhar. Clique no braço para escolher a casa e tocar a nota. </p>
+                    </div>
+                    <div class="gtr-modes" role="group" aria-label="Timbre">
+                        <button class="gtr-chip" type="button" data-mode="clean"> LIMPO </button>
+                        <button class="gtr-chip is-active" type="button" data-mode="crunch"> CRUNCH </button>
+                        <button class="gtr-chip" type="button" data-mode="metal"> METAL </button>
+                    </div>
+                </div>
+                <div class="gtr-stage" id="gtr-stage" tabindex="0" aria-label="Palco da guitarra King V. Use as teclas 1 a 6 para tocar as cordas e espaço para um acorde.">
+                    <div class="gtr-ring" aria-hidden="true"></div>
+                    <div class="gtr-readout" id="gtr-note" aria-live="polite"> TOQUE UMA CORDA </div>
+                    <svg id="gtr-svg" class="gtr-svg" viewBox="10 0 1260 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Guitarra King V preta e dourada">
+                        <defs>
+                            <linearGradient id="gtr-body" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0" stop-color="#262630" />
+                                <stop offset="0.45" stop-color="#0b0b10" />
+                                <stop offset="1" stop-color="#030304" />
+                            </linearGradient>
+                            <linearGradient id="gtr-gold" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0" stop-color="#fff1a0" />
+                                <stop offset="0.5" stop-color="#ffd026" />
+                                <stop offset="1" stop-color="#9a6b00" />
+                            </linearGradient>
+                            <linearGradient id="gtr-board" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#1c140d" />
+                                <stop offset="1" stop-color="#0a0706" />
+                            </linearGradient>
+                            <clipPath id="gtr-body-clip">
+                                <path d="M590 244 L70 56 L40 70 L380 280 L40 490 L70 504 L590 316 Z" />
+                            </clipPath>
+                            <filter id="gtr-shadow" x="-10%" y="-10%" width="120%" height="135%">
+                                <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000" flood-opacity="0.8" />
+                            </filter>
+                        </defs>
+                        <g filter="url(#gtr-shadow)">
+                            <!-- Corpo King V -->
+                            <path d="M590 244 L70 56 L40 70 L380 280 L40 490 L70 504 L590 316 Z" fill="url(#gtr-body)" />
+                            <g clip-path="url(#gtr-body-clip)">
+                                <path d="M590 244 L70 56 L40 70 L380 280 L40 490 L70 504 L590 316 Z" fill="none" stroke="url(#gtr-gold)" stroke-width="12" />
+                            </g>
+                            <path d="M590 244 L70 56 L40 70 L380 280 L40 490 L70 504 L590 316 Z" fill="none" stroke="#7a5600" stroke-width="1.5" />
+                            <path d="M575 250 L84 64 L96 72 L575 262 Z" fill="rgba(255,255,255,0.07)" />
+                            <path d="M575 310 L84 496 L96 488 L575 298 Z" fill="rgba(255,255,255,0.03)" />
+                            <g id="gtr-hardware"></g>
+                            <!-- Braço -->
+                            <polygon points="575,247 1062,256 1062,304 575,313" fill="#120e0a" stroke="#3a2c14" stroke-width="1.2" />
+                            <polygon points="595,249 1062,257 1062,303 595,311" fill="url(#gtr-board)" />
+                            <!-- Headstock -->
+                            <polygon points="1064,252 1196,226 1250,262 1226,296 1064,308" fill="url(#gtr-body)" stroke="url(#gtr-gold)" stroke-width="3" stroke-linejoin="round" />
+                            <text class="gtr-logo" x="1150" y="272" transform="rotate(-9 1150 272)">GDT</text>
+                            <polygon points="1058,256 1064,256 1064,304 1058,304" fill="#f1ead0" />
+                            <g id="gtr-fretboard"></g>
+                            <g id="gtr-headstock-hw"></g>
+                            <g id="gtr-strings"></g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="gtr-controls">
+                    <button class="button button-primary" type="button" id="gtr-strum"> ACORDE </button>
+                    <button class="button button-secondary" type="button" id="gtr-riff"> RIFF </button>
+                    <div class="gtr-strings" role="group" aria-label="Cordas">
+                        <button class="gtr-chip" type="button" data-string="0"> 6ª E <small> [6] </small> </button>
+                        <button class="gtr-chip" type="button" data-string="1"> 5ª A <small> [5] </small> </button>
+                        <button class="gtr-chip" type="button" data-string="2"> 4ª D <small> [4] </small> </button>
+                        <button class="gtr-chip" type="button" data-string="3"> 3ª G <small> [3] </small> </button>
+                        <button class="gtr-chip" type="button" data-string="4"> 2ª B <small> [2] </small> </button>
+                        <button class="gtr-chip" type="button" data-string="5"> 1ª E <small> [1] </small> </button>
+                    </div>
+                    <p class="gtr-hint"> DICA: clique na guitarra e use as teclas 1–6 para tocar cada corda, ESPAÇO para um acorde e R para o riff. </p>
                 </div>
             </div>
         </section>
