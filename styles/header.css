@@ -9,7 +9,7 @@ main,
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 6px 24px;
+    padding: 6px 4%;
     background: #08080c;
     border-bottom: 1px solid #1e1e28;
     color: #8e8e9f;
@@ -30,7 +30,7 @@ main,
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 6%;
+    padding: 0 4%;
     border-bottom: 1px solid #1e1e28;
     background: rgba(5, 5, 7, 0.91);
     backdrop-filter: blur(12px);
