@@ -53,7 +53,33 @@
                     <div class="hero-glow">
                     </div>
                 </div>
-                <img src="assets/guitar_king_v.png" alt="Guitarra 3D King V - Heavy Metal" id="hero-guitar" class="hero-guitar">
+                <svg id="gtr-svg" class="hero-guitar" viewBox="10 0 1260 560" tabindex="0" role="img" aria-label="Guitarra King V interativa">
+                    <defs>
+                        <linearGradient id="gtr-body" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#262630" /><stop offset="1" stop-color="#030304" />
+                        </linearGradient>
+                        <linearGradient id="gtr-gold" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#fff1a0" /><stop offset="0.5" stop-color="#ffd026" />
+                            <stop offset="1" stop-color="#9a6b00" />
+                        </linearGradient>
+                        <path id="gtr-bodyp" d="M590 244 L70 56 L40 70 L380 280 L40 490 L70 504 L590 316 Z" />
+                        <clipPath id="gtr-clip"><use href="#gtr-bodyp" /></clipPath>
+                    </defs>
+                    <use href="#gtr-bodyp" fill="url(#gtr-body)" />
+                    <use href="#gtr-bodyp" fill="none" stroke="url(#gtr-gold)" stroke-width="12" clip-path="url(#gtr-clip)" />
+                    <g id="gtr-hardware"></g>
+                    <polygon points="575,247 1062,256 1062,304 575,313" fill="#120e0a" />
+                    <polygon points="595,249 1062,257 1062,303 595,311" fill="#0c0806" />
+                    <polygon points="1064,252 1196,226 1250,262 1226,296 1064,308" fill="url(#gtr-body)" stroke="url(#gtr-gold)" stroke-width="3" />
+                    <g id="gtr-fretboard"></g>
+                    <g id="gtr-strings"></g>
+                </svg>
+                <div class="gtr-ui">
+                    <span id="gtr-note"> ARRASTE NAS CORDAS </span>
+                    <button class="gtr-chip" type="button" data-mode="clean"> LIMPO </button>
+                    <button class="gtr-chip is-active" type="button" data-mode="crunch"> CRUNCH </button>
+                    <button class="gtr-chip" type="button" data-mode="metal"> METAL </button>
+                </div>
             </div>
             <div class="hero-content container">
                 <div class="hero-copy">
@@ -231,6 +257,7 @@
     <a class="floating-github" href="https://github.com/gustavodrumtonello-dev" target="_blank" rel="noopener"
         title="Acessar GitHub"> ↗ </a>
     <script src="script.js" defer> </script>
+    <script src="guitar.js" defer> </script>
 </body>
 
 </html>
